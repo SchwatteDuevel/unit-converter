@@ -11,10 +11,12 @@ let feet = "";
 let gallon = "";
 let pound = "";
 
+// Constants for converting
 const length = 3.281;
 const volume = 0.264;
 const mass = 2.204;
 
+//Event that triggers converting
 btn.addEventListener("click", () => {
     let inputValue = input.value;
     meter = inputValue / length;
@@ -30,6 +32,7 @@ btn.addEventListener("click", () => {
     input.value = "";
 })
 
+//Theme switcher: two different stylesheet files
 const btnTheme = document.getElementById("switchMode");
 const theme = document.getElementsByTagName("link")[0];
 
