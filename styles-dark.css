@@ -12,7 +12,6 @@ body {
 }
 
 :root {
-    --bg-color: #f0f0f0;
     --main-color: #0284C7;
     --text-color: #616060;
     --dark-bg-color: #1F2937;
@@ -24,7 +23,7 @@ body {
     width: 100%;
     max-width: 50rem;
     background-color: var(--dark-main-color);
-    margin: 3rem auto;
+    margin: 1rem auto;
     text-align: center;
     border-radius: 15px;
 }
@@ -33,6 +32,11 @@ body {
     background-color: var(--main-color);
     padding: 2rem 0;
     border-radius: 15px 15px 0 0;
+}
+
+header > p {
+    color: white;
+    font-size: 0.8rem;
 }
 
 h1 {

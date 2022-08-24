@@ -28,7 +28,7 @@ btn.addEventListener("click", () => {
 
     lengthRes.innerHTML = `${inputValue} meters = ${feet.toFixed(3)} feet | ${inputValue} feet = ${meter.toFixed(3)} meters`;
     volumeRes.innerHTML = `${inputValue} liters = ${gallon.toFixed(3)} gallons | ${inputValue} gallons = ${liter.toFixed(3)} liters`;
-    massRes.innerHTML = `${inputValue} kilos = ${pound.toFixed(3)} pounds | ${inputValue} pounds = ${kilogram.toFixed(3)} kilos`;
+    massRes.innerHTML = `${inputValue} kilograms = ${pound.toFixed(3)} pounds | ${inputValue} pounds = ${kilogram.toFixed(3)} kilograms`;
     input.value = "";
 })
 
