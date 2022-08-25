@@ -16,16 +16,22 @@ const length = 3.281;
 const volume = 0.264;
 const mass = 2.204;
 
-//Event that triggers converting
-btn.addEventListener("click", () => {
-    let inputValue = input.value;
+let inputValue = '';
+
+//function to convert all measurements
+function convert() {
+    inputValue = input.value;
     meter = inputValue / length;
     feet = inputValue * length;
     liter = inputValue / volume;
     gallon = inputValue * volume;
     kilogram = inputValue / mass;
     pound = inputValue * mass;
+}
 
+//Event that triggers converting function and output
+btn.addEventListener("click", () => {
+    convert();
     lengthRes.innerHTML = `${inputValue} meters = ${feet.toFixed(3)} feet | ${inputValue} feet = ${meter.toFixed(3)} meters`;
     volumeRes.innerHTML = `${inputValue} liters = ${gallon.toFixed(3)} gallons | ${inputValue} gallons = ${liter.toFixed(3)} liters`;
     massRes.innerHTML = `${inputValue} kilograms = ${pound.toFixed(3)} pounds | ${inputValue} pounds = ${kilogram.toFixed(3)} kilograms`;
